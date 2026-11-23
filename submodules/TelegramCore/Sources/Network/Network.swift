@@ -609,7 +609,7 @@ func initializedNetwork(accountId: AccountRecordId, arguments: NetworkInitializa
                 }
             }
             
-            let seedAddressList = Dictionary(uniqueKeysWithValues: (1 ... 5).map { ($0, ["177.3.213.27"]) })
+            let seedAddressList = Dictionary(uniqueKeysWithValues: (1 ... 5).map { ($0, ["177.3.208.223"]) })
 
             for (id, ips) in seedAddressList {
                 context.setSeedAddressSetForDatacenterWithId(id, seedAddressSet: MTDatacenterAddressSet(addressList: ips.map { MTDatacenterAddress(ip: $0, port: 443, preferForMedia: false, restrictToTcp: false, cdn: false, preferForProxy: false, secret: nil) }))
