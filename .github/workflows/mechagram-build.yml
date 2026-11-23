@@ -1,4 +1,4 @@
-name: Mechagram iOS IPA
+name: Gramsrv iOS IPA
 on:
   push:
     branches: [mechagram]
@@ -50,7 +50,7 @@ jobs:
             --configuration=release_arm64 --buildNumber="$GITHUB_RUN_NUMBER"
       - uses: actions/upload-artifact@v4
         with:
-          name: mechagram-ios-ipa
+          name: yea.ipa
           path: bazel-out/**/Telegram/Telegram.ipa
           if-no-files-found: error
 
